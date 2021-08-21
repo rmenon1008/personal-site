@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Complete &#8211; Rohan Menon</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
+	<description>Rohan Menon</description>
+	<lastBuildDate>Wed, 07 Jul 2021 03:08:24 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+
+<image>
+	<url>./../../../wp-content/uploads/2021/05/cropped-favicon-32x32.png</url>
+	<title>Complete &#8211; Rohan Menon</title>
+	<link>./../../../index.html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>athletes for equal rights</title>
+		<link>./../../../projects/athletes-for-equal-rights/index.html</link>
+					<comments>./../../../projects/athletes-for-equal-rights/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[rohanmenon]]></dc:creator>
+		<pubDate>Fri, 07 May 2021 00:43:00 +0000</pubDate>
+				<category><![CDATA[projects]]></category>
+		<category><![CDATA[complete]]></category>
+		<guid isPermaLink="false">http://wp.menon.pro/?p=546</guid>
+
+					<description><![CDATA[A logo, style guide and interactive blog.]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img width="1024" height="662" src="./../../../wp-content/uploads/2021/03/thumbnail-3-1024x662.jpg" alt="" class="wp-image-104" srcset="./../../../wp-content/uploads/2021/03/thumbnail-3-1024x662.jpg 1024w, ./../../../wp-content/uploads/2021/03/thumbnail-3-300x194.jpg 300w, ./../../../wp-content/uploads/2021/03/thumbnail-3-768x497.jpg 768w, ./../../../wp-content/uploads/2021/03/thumbnail-3-1536x994.jpg 1536w, ./../../../wp-content/uploads/2021/03/thumbnail-3.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<div class='post_list'><div class='scroll-window'>      <a class="nostyle block" href="./../../../log-book/athletes-for-equal-rights/interactive-timeline/index.html" role="button">
+        <div class="image-gallery-small" style="--animation-order:0;">
+          <div class="image-contain">
+            <img width="1908" height="962" src="./../../../wp-content/uploads/2021/05/timeline.jpg" class="batch-load wp-post-image" alt="" srcset="./../../../wp-content/uploads/2021/05/timeline.jpg 1908w, ./../../../wp-content/uploads/2021/05/timeline-300x151.jpg 300w, ./../../../wp-content/uploads/2021/05/timeline-1024x516.jpg 1024w, ./../../../wp-content/uploads/2021/05/timeline-768x387.jpg 768w, ./../../../wp-content/uploads/2021/05/timeline-1536x774.jpg 1536w" sizes="(max-width: 1908px) 100vw, 1908px" />          </div>
+          <div class="gallery-text">
+            <h3>interactive timeline</h3>
+            <span class='status'>September 15, 2020</span>
+            <div class="image-gallery-small-haze"></div>
+            <p>We wanted the site to have a homepage that was more than just a landing. With the help of Jacob Yanoff, we storyboarded and designed an interactive timeline presenting a short history of athletes and activism.I developed this part of the site on a separate development server and eventually moved it to the main site. [&#8230;]</p>
+          </div>
+        </div>
+      </a>
+
+          <a class="nostyle block" href="./../../../log-book/athletes-for-equal-rights/wordpress-blog/index.html" role="button">
+        <div class="image-gallery-small" style="--animation-order:1;">
+          <div class="image-contain">
+            <img width="1911" height="963" src="./../../../wp-content/uploads/2021/05/site.jpg" class="batch-load wp-post-image" alt="" srcset="./../../../wp-content/uploads/2021/05/site.jpg 1911w, ./../../../wp-content/uploads/2021/05/site-300x151.jpg 300w, ./../../../wp-content/uploads/2021/05/site-1024x516.jpg 1024w, ./../../../wp-content/uploads/2021/05/site-768x387.jpg 768w, ./../../../wp-content/uploads/2021/05/site-1536x774.jpg 1536w" sizes="(max-width: 1911px) 100vw, 1911px" />          </div>
+          <div class="gallery-text">
+            <h3>wordpress blog</h3>
+            <span class='status'>August 9, 2020</span>
+            <div class="image-gallery-small-haze"></div>
+            <p>I had created a number of websites, but all of those were for myself so I never bothered with content management or a complicated backend. The PHP backend of WordPress was definitely a learning experience for me. After creating a custom theme for the site, I created the skeleton pages that Emma and Olivia would [&#8230;]</p>
+          </div>
+        </div>
+      </a>
+
+          <a class="nostyle block" href="./../../../log-book/athletes-for-equal-rights/logo-and-style-guide/index.html" role="button">
+        <div class="image-gallery-small" style="--animation-order:2;">
+          <div class="image-contain">
+            <img width="1920" height="1242" src="./../../../wp-content/uploads/2021/05/thumbnail.jpg" class="batch-load wp-post-image" alt="" srcset="./../../../wp-content/uploads/2021/05/thumbnail.jpg 1920w, ./../../../wp-content/uploads/2021/05/thumbnail-300x194.jpg 300w, ./../../../wp-content/uploads/2021/05/thumbnail-1024x662.jpg 1024w, ./../../../wp-content/uploads/2021/05/thumbnail-768x497.jpg 768w, ./../../../wp-content/uploads/2021/05/thumbnail-1536x994.jpg 1536w" sizes="(max-width: 1920px) 100vw, 1920px" />          </div>
+          <div class="gallery-text">
+            <h3>logo and style guide</h3>
+            <span class='status'>July 13, 2020</span>
+            <div class="image-gallery-small-haze"></div>
+            <p>The logo and style needed to reflect this spirit. It borrows many of the design cues from the Black Lives Matter movement.Since the logo would appear most frequently on Instagram, creating a small and recognizable logo with a square aspect ratio was important. At the same time, the full name of the AFER is too [&#8230;]</p>
+          </div>
+        </div>
+      </a>
+
+    </div></div>
+
+
+
+<p><strong>Explore the interactive timeline and blog:&nbsp;<a rel="noreferrer noopener" href="https://www.athletesforequalrights.com/" target="_blank">athletesforequalrights.com</a></strong></p>
+
+
+
+<p>Emma Anderson and Olivia Jack created Athletes For Equal Rights to “showcase the experiences of minority athletes as individuals, shed light on relevant social justice issues, and give meaning to statistics through physical activity.”</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../log-book/athletes-for-equal-rights/logo-and-style-guide/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>xroads</title>
+		<link>./../../../projects/xroads/index.html</link>
+					<comments>./../../../projects/xroads/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[rohanmenon]]></dc:creator>
+		<pubDate>Thu, 06 May 2021 00:41:17 +0000</pubDate>
+				<category><![CDATA[projects]]></category>
+		<category><![CDATA[complete]]></category>
+		<guid isPermaLink="false">http://wp.menon.pro/?p=542</guid>
+
+					<description><![CDATA[A web app for students to find and join clubs during the COVID 19 pandemic.]]></description>
+										<content:encoded><![CDATA[</p>
+<figure class="wp-block-image"><img src="./../../../wp-content/uploads/2021/05/1_thumbnail.png" alt="XRoads"/></figure>
+</p>
+<p><strong>See the site at <a rel="noreferrer noopener" href="https://www.xroads.club/" target="_blank">xroads.club</a></strong></p>
+</p>
+<p>Kalin Kochnev and I are officers of the Robotics Club at our high school. Our 2020 season was cut short by the COVID 19 Pandemic. We really wanted to be able to grow our club in the coming season, but we could be pretty sure that the usual school-wide event where clubs set up booths to attract prospective members would not be able to run.</p>
+<p>Kalin came to me with the idea for a virtual club fair, and while I am not a web app expert by any measure, I was happy to help where I could.</p>
+<p>Initially, I helped with some of the mockup creation and functional design. I knew enough JS to get started learning react and developing skeleton pages for the major parts of the site. Kalin worked on the Django backend, authentication and REST API. We are currently getting ready to launch the site.</p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../projects/xroads/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>font explorations</title>
+		<link>./../../../projects/font-explorations/index.html</link>
+					<comments>./../../../projects/font-explorations/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[rohanmenon]]></dc:creator>
+		<pubDate>Thu, 06 May 2021 00:38:41 +0000</pubDate>
+				<category><![CDATA[projects]]></category>
+		<category><![CDATA[complete]]></category>
+		<guid isPermaLink="false">http://wp.menon.pro/?p=524</guid>
+
+					<description><![CDATA[Some fonts created for fun.]]></description>
+										<content:encoded><![CDATA[<figure class="wp-block-image"><img src="./../../../wp-content/uploads/2021/05/fofana.png" alt="Fofana"/></figure>
+<p><strong>These fonts were developed for fun in the summer of 2018. I&#8217;ve provided them here to download, but keep in mind that they aren&#8217;t quite finished yet.</strong></p>
+<p>Fofana is a highly condensed handwriting font that I designed to be very playful. It is far from complete, with only letters A-Z in upper and lower case available. The kerning needs to be manually adjusted, or if you have the option, use optical kerning. That being said, you can <a href="./../../../wp-content/uploads/2021/07/fofana.zip" data-type="URL" data-id="./../../../wp-content/uploads/2021/07/fofana.zip">download it here</a>.</p>
+<figure class="wp-block-image"><img src="./../../../wp-content/uploads/2021/05/dini.png" alt="Dini"/></figure>
+<p>Dini is a blocky, all caps font. I&#8217;ve only created letters A-Z and basic punctuation. Again, the kerning needs to be adjusted manually. Here&#8217;s the <a href="./../../../wp-content/uploads/2021/07/dini.zip" data-type="URL" data-id="./../../../wp-content/uploads/2021/07/dini.zip">download</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../projects/font-explorations/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>spiffy</title>
+		<link>./../../../research/spiffy/index.html</link>
+					<comments>./../../../research/spiffy/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[rohanmenon]]></dc:creator>
+		<pubDate>Mon, 25 Mar 2019 15:47:59 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[complete]]></category>
+		<guid isPermaLink="false">http://wp.menon.pro/?p=122</guid>
+
+					<description><![CDATA[A robotic system to automate the patient cleaning process in hospitals.]]></description>
+										<content:encoded><![CDATA[<figure class="wp-block-image size-large"><img width="1024" height="610" src="./../../../wp-content/uploads/2021/03/thumbnail-3-1024x610.png" alt="" class="wp-image-115" srcset="./../../../wp-content/uploads/2021/03/thumbnail-3-1024x610.png 1024w, ./../../../wp-content/uploads/2021/03/thumbnail-3-300x179.png 300w, ./../../../wp-content/uploads/2021/03/thumbnail-3-768x458.png 768w, ./../../../wp-content/uploads/2021/03/thumbnail-3.png 1200w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<p><strong>This project was developed in collaboration with Ian Vernooy for the 2019 Senior Division GCRSEF. It received the second honorable mention and moved on to the STANYS Science Fair later that year.</strong></p>
+<p>The CDC estimates that 1 out of 31 hospital patients is being treated for an illness they acquired in a hospital. Not only does this amount to a staggering quantity of wasted resources, it can sometimes lead to the loss of human life. In fact, in the U.S. alone, 2 million people are infected and nearly 100,000 people die each year from these diseases. To make matters worse, the infections found in hospitals are often the most deadly, leading to the spread and development of superbugs, untreatable by common medicine.</p>
+<p>One potential transfer of infection is the patient room itself. In between patients, hospitals use people to disinfect the areas where disease is most likely to transfer. These high touch areas are traditionally cleaned with a hydrogen peroxide solution to destroy bacteria and viruses. While this practice saves lives every day, it could be made more effective with the addition of an automated system to clean the highest touch areas. Additionally, such a solution could save costs for hospitals.</p>
+<p>We have developed a device that operates along a defined path in a patient room, using a alcohol mister and UV lamp to kill pathogens in high touch areas such as light switches, doorknobs, beds and more.</p>
+<p>The device was able to perform each of its individual goals well. The robot can determine its angle and position relative to a tape line on the ground, and use this to correct its course. Additionally, it can move its gantry, mist alcohol and use its UV light. However some implementation flaws do need to be worked out before the robot is ready for deployment at scale. The navigation system is the main weak point, but with further software development, the system as a whole could function very well.</p>
+<h3 class="wide">Research Paper</h3>
+<div class="wp-block-lazyblock-google-doc lazyblock-google-doc-1ILn4a"><iframe class="gdoc" frameborder="0" scrolling="no" src="https://drive.google.com/file/d/1idHSsstoQCgyKA7ltSyXQ6RBx2qmbfAj/preview"> </iframe></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../research/spiffy/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>foresight</title>
+		<link>./../../../research/foresight/index.html</link>
+					<comments>./../../../research/foresight/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[rohanmenon]]></dc:creator>
+		<pubDate>Sun, 25 Mar 2018 15:48:59 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[complete]]></category>
+		<guid isPermaLink="false">http://wp.menon.pro/?p=121</guid>
+
+					<description><![CDATA[Navigation and obstacle avoidance for the visually impaired.]]></description>
+										<content:encoded><![CDATA[<figure class="wp-block-image size-large"><img width="1024" height="573" src="./../../../wp-content/uploads/2021/03/thumbnail-6-1024x573.jpg" alt="" class="wp-image-111" srcset="./../../../wp-content/uploads/2021/03/thumbnail-6-1024x573.jpg 1024w, ./../../../wp-content/uploads/2021/03/thumbnail-6-300x168.jpg 300w, ./../../../wp-content/uploads/2021/03/thumbnail-6-768x430.jpg 768w, ./../../../wp-content/uploads/2021/03/thumbnail-6.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<p><strong>This project was worked on in collaboration with Ian Vernooy for the 2018 Senior Division GCRSEF. It received the Regeneron Health Award.</strong></p>
+<p>Countless devices have been created to help 4.2% of Americans who are legally blind to become more independent in their daily lives. Urban environments are notoriously hard to traverse and with about 80% of the visually impaired living in urban environments, it’s no wonder that many have trouble navigating. Some solutions to this problem have been created like the probing cane, service animals and camera based obstacle avoidance systems. Though these can prevent collisions with nearby objects, they provide no feedback in the way of walking directions. The ones that do perform this task are usually audio based and read directions into the ear. They do not provide very accurate turn information, but instead provide general directions like left and right.</p>
+<p><img alt="ForeSight Hardware Diagram" src="./../../../wp-content/uploads/2021/05/thumbnail.png">We created a device that aims to solve these problems. The device is a wearable array vibration motors that are used to communicate navigation and obstacle avoidance information to the user. It uses a set of 3 time of flight laser range sensors to determine the proximity of nearby obstacles to the user. These sensors trigger a corresponding vibration motor on the ankle band to let the user know what direction they are approaching the obstacle. Additionally, the device can pair via Bluetooth to a phone to help with urban navigation. Using the Google Maps Navigation API, the device haptically &#8220;taps&#8221; the users ankle in the direction they need to turn in order to continue on their route.</p>
+</p>
+<h3 class="wide">Research Paper</h3>
+<div class="wp-block-lazyblock-google-doc lazyblock-google-doc-Ze2T16"><iframe class="gdoc" frameborder="0" scrolling="no" src="https://drive.google.com/file/d/1kKngAFXGE1OKGCJt0aE98HrFTszXe45F/preview"> </iframe></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../research/foresight/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>autovent</title>
+		<link>./../../../research/autovent/index.html</link>
+					<comments>./../../../research/autovent/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[rohanmenon]]></dc:creator>
+		<pubDate>Sat, 25 Mar 2017 15:53:50 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[complete]]></category>
+		<guid isPermaLink="false">http://wp.menon.pro/?p=130</guid>
+
+					<description><![CDATA[Smart floor registers to increase the efficiency of existing HVAC systems.]]></description>
+										<content:encoded><![CDATA[<figure class="wp-block-image size-full"><img width="804" height="549" src="./../../../wp-content/uploads/2021/03/thumbnail-5.jpg" alt="" class="wp-image-110" srcset="./../../../wp-content/uploads/2021/03/thumbnail-5.jpg 804w, ./../../../wp-content/uploads/2021/03/thumbnail-5-300x205.jpg 300w, ./../../../wp-content/uploads/2021/03/thumbnail-5-768x524.jpg 768w" sizes="(max-width: 804px) 100vw, 804px" /></figure>
+<p><strong>This project was developed for the 2017 Junior Devision GCRSEF. It received the Air Force Award.</strong></p>
+<p>A large amount of energy is being wasted in our current heating, ventilation and air conditioning (HVAC) systems. Often, an entire home is being heated just so a single person can sleep in their room comfortably. These systems also use a single temperature measurement to determine if the entire home needs to be heated or cooled. Our current systems have no way of telling if someone is in a room, this can lead to unnecessary heating and cooling and energy loss.</p>
+<p>A device that could open and close heating vents to redirect the heated air to where it is needed, would greatly reduce the energy usage in a home. It would open and close vents depending on human presence, room temperature and a preset heating schedule the device can follow. This device should cost under $40 per vent and should easily connect with existing HVAC systems.</p>
+<p>Such a device will be comprised of off the shelf parts enclosed in a 3D printed housing. The device will consist of a processing unit, a temperature sensor for feedback control, a motion detector to detect a person&#8217;s presence, wifi connectivity and a small servo motor to open and close the vent. There will also be a central processing unit that communicates between the devices and controls the house’s HVAC to keep specific rooms at specific temperatures.</p>
+<p>There are 3 separate parts of the device. There are sensor modules that are plugged into the wall, vent modules that control airflow to each room and a central unit that communicates between the sensors and the vents to keep the house just how the user wants it. All of the device communicate via Wi-Fi to allow for easy setup. The central unit connects to an app that allows the user to switch between the motion detection, consistent temperature and schedule mode.</p>
+</p>
+<h3 class="wide">Presentation</h3>
+<div class="wp-block-lazyblock-google-presentation lazyblock-google-presentation-S8EXA"><iframe class="gslide" src="https://docs.google.com/presentation/d/e/2PACX-1vRy0N2T2NdSCGOh18rLOUfKH4IC1fBqUjetNdEFCLv-fnegzIOHww6rXx_sEuqAjzlpOq5Es1iRLOvR/embed?start=false&amp;amp;loop=false&amp;amp;delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../research/autovent/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>universal water purification</title>
+		<link>./../../../research/universal-water-purification/index.html</link>
+					<comments>./../../../research/universal-water-purification/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[rohanmenon]]></dc:creator>
+		<pubDate>Sat, 25 Mar 2017 11:56:44 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[complete]]></category>
+		<guid isPermaLink="false">http://wp.menon.pro/?p=136</guid>
+
+					<description><![CDATA[A 2 stage DIY distilation system to increase efficiency.]]></description>
+										<content:encoded><![CDATA[<figure class="wp-block-image size-large"><img width="1024" height="768" src="./../../../wp-content/uploads/2021/03/thumbnail-9.jpg" alt="" class="wp-image-116" srcset="./../../../wp-content/uploads/2021/03/thumbnail-9.jpg 1024w, ./../../../wp-content/uploads/2021/03/thumbnail-9-300x225.jpg 300w, ./../../../wp-content/uploads/2021/03/thumbnail-9-768x576.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<p><strong>The project was created for the 2016 Junior Division GCRSEF. It received the Army Award.</strong></p>
+<p>In order to improve the effeciency of small scale water purification and desalination, the device attempts to capture the waste heat from distilation to preheat incoming water. The device centers around an electric pressure cooker which acts as the boiler. A copper condenser coil is submerged into the next batch of water to be distilled, preheating it and thus saving some energy.</p>
+<h3 class="wide">Research Paper</h3>
+<div class="wp-block-lazyblock-google-doc lazyblock-google-doc-Z1iyGXa"><iframe class="gdoc" frameborder="0" scrolling="no" src="https://drive.google.com/file/d/1Pu0HDh8ldbrAqfVjghIuqX5YQ-ckEJM5/preview"> </iframe></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../research/universal-water-purification/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>robotic room mapper</title>
+		<link>./../../../research/robotic-room-mapper/index.html</link>
+					<comments>./../../../research/robotic-room-mapper/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[rohanmenon]]></dc:creator>
+		<pubDate>Sun, 01 Jan 2017 00:00:05 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[complete]]></category>
+		<guid isPermaLink="false">http://wp.menon.pro/?p=144</guid>
+
+					<description><![CDATA[Using LiDAR to create 2D maps of unknown environments.]]></description>
+										<content:encoded><![CDATA[<figure class="wp-block-image size-large"><img width="926" height="662" src="./../../../wp-content/uploads/2021/03/thumbnail-8.jpg" alt="" class="wp-image-114" srcset="./../../../wp-content/uploads/2021/03/thumbnail-8.jpg 926w, ./../../../wp-content/uploads/2021/03/thumbnail-8-300x214.jpg 300w, ./../../../wp-content/uploads/2021/03/thumbnail-8-768x549.jpg 768w" sizes="(max-width: 926px) 100vw, 926px" /></figure>
+<p><strong>This project was developed for the 2015 Junior Division GCRSEF. It received the 3rd place award and attended the STANYS fair where it received the 1st place award in its category.</strong></p>
+<p>The advancements in autonomous vehicle and drone technology have led to a new problem: How can robots navigate through their surroundings in unfamiliar places? This device can tell a robot where it is in the room, how to navigate the room, and what the room looks like. This type of device could be useful in search and rescue, autonomous navigation, measuring room sizes for real estate agents and for planning escape routes in buildings. It could also be potentially useful for the visually impaired, giving them an idea where they are inside a building.</p>
+</p>
+<h3 class="wide">Research Paper</h3>
+<div class="wp-block-lazyblock-google-doc lazyblock-google-doc-26xqSD"><iframe class="gdoc" frameborder="0" scrolling="no" src="https://drive.google.com/file/d/1f2rsbudEzUmkQ0Vseu1y6nmyqfftVo7L/preview"> </iframe></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../research/robotic-room-mapper/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

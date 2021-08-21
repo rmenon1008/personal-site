@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Log Book &#8211; Rohan Menon</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
+	<description>Rohan Menon</description>
+	<lastBuildDate>Wed, 30 Jun 2021 13:43:24 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+
+<image>
+	<url>./../../../wp-content/uploads/2021/05/cropped-favicon-32x32.png</url>
+	<title>Log Book &#8211; Rohan Menon</title>
+	<link>./../../../index.html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>loading images in a grid</title>
+		<link>./../../../log-book/personal-site/loading-images-in-a-grid/index.html</link>
+					<comments>./../../../log-book/personal-site/loading-images-in-a-grid/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[rohanmenon]]></dc:creator>
+		<pubDate>Sun, 30 May 2021 18:36:22 +0000</pubDate>
+				<category><![CDATA[personal site]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=870</guid>
+
+					<description><![CDATA[High quality images can take a few seconds to load, even on fast internet connections, but users expect websites to be interactive in much under that. Browsers typically handle this by loading in the text and layout information first, while loading the images in the background. When an image is ready for display, it appears [...]]]></description>
+										<content:encoded><![CDATA[
+<p>High quality images can take a few seconds to load, even on fast internet connections, but users expect websites to be interactive in much under that. Browsers typically handle this by loading in the text and layout information first, while loading the images in the background. When an image is ready for display, it appears on the page.</p>
+
+
+
+<p>While this works great for most scenarios, this random popping into view can be jarring when there are many images in view at once, such as in a grid layout. When load times are slow, the problem is only made worse.</p>
+
+
+
+<figure class="wp-block-video"><video autoplay loop muted src="./../../../wp-content/uploads/2021/05/ezgif.com-gif-maker-1.webm" playsinline></video><figcaption>Loading before optimization (throttled connection)</figcaption></figure>
+
+
+
+<h3>My Implementation</h3>
+
+
+
+<p>The solution is to load in placeholder boxes immediately, both to signify the presence of content and to avoid a layout shift when the images load. Then, once all the images have finished loading, fade them in over the placeholders with a quick animation. This ends up being much more pleasing, even on slower connections.</p>
+
+
+
+<figure class="wp-block-video"><video autoplay loop muted src="./../../../wp-content/uploads/2021/05/ezgif.com-gif-maker-3-1.webm"></video><figcaption>After optimization (same throttling speed)</figcaption></figure>
+
+
+
+<p>Here&#8217;s the CSS</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css">.batch-load {
+   opacity: 0; /* Images start completely transparent */
+   transition: 0.4s; /* When they load in, they are animated slightly */
+}
+
+.image-container {
+   background-color: #ebebeb; /* Image containers are given a light gray background */
+}</code></pre>
+
+
+
+<p>And the JS</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript">// Stolen from https://stackoverflow.com/questions/11071314/
+// Triggers when all the batch-loaded images have finished loading
+Promise.all(Array.from(document.querySelectorAll('.batch-load')).filter(img =&gt; !img.complete).map(img =&gt; new Promise(resolve =&gt; {
+     img.onload = img.onerror = resolve;
+}))).then(() =&gt; {
+     setImageOpacity(1)
+});
+
+// If it's taken 2.5s and the images haven't finished, just show whatever we have
+setTimeout(function() {
+     setImageOpacity(1)
+}, 2500);
+
+function setImageOpacity(opacity) {
+     document.querySelectorAll('.batch-load').forEach(function(image) {
+         image.style.opacity = opacity;
+     });
+}</code></pre>
+
+
+
+<p>This method involves setting the image transparent on the initial load. If the browser doesn’t support JS execution, we want to make sure that the images are visible, so this bit gets added to the site footer just in case.</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup">&lt;noscript&gt;
+    &lt;style&gt;
+        img {
+            opacity: 1 <strong>!important</strong>;
+        }
+    &lt;/style&gt;
+&lt;/noscript&gt;</code></pre>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../log-book/personal-site/loading-images-in-a-grid/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		<enclosure url="./../../../wp-content/uploads/2021/05/ezgif.com-gif-maker-1.webm" length="140969" type="video/webm" />
+<enclosure url="./../../../wp-content/uploads/2021/05/ezgif.com-gif-maker-3-1.webm" length="119118" type="video/webm" />
+
+			</item>
+		<item>
+		<title>edaas</title>
+		<link>./../../../log-book/logos/edaas/index.html</link>
+					<comments>./../../../log-book/logos/edaas/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[rohanmenon]]></dc:creator>
+		<pubDate>Sat, 08 May 2021 17:25:53 +0000</pubDate>
+				<category><![CDATA[logos]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=702</guid>
+
+					<description><![CDATA[EDAAS is a web based virtual environment for programming education. I tried to highlight both the educational and technical prowess of the service through its logo. I chose a sand castle to reflect the playful and engaging lessons offered, with a flag representing goal setting and achievement. The bold all-caps headings contrast nicely with a [...]]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img width="1024" height="327" src="./../../../wp-content/uploads/2021/05/image-4-1024x327.png" alt="" class="wp-image-705" srcset="./../../../wp-content/uploads/2021/05/image-4-1024x327.png 1024w, ./../../../wp-content/uploads/2021/05/image-4-300x96.png 300w, ./../../../wp-content/uploads/2021/05/image-4-768x245.png 768w, ./../../../wp-content/uploads/2021/05/image-4.png 1077w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img width="1024" height="130" src="./../../../wp-content/uploads/2021/05/image-6-1024x130.png" alt="" class="wp-image-710" srcset="./../../../wp-content/uploads/2021/05/image-6-1024x130.png 1024w, ./../../../wp-content/uploads/2021/05/image-6-300x38.png 300w, ./../../../wp-content/uploads/2021/05/image-6-768x98.png 768w, ./../../../wp-content/uploads/2021/05/image-6.png 1225w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>EDAAS is a web based virtual environment for programming education. I tried to highlight both the educational and technical prowess of the service through its logo. I chose a sand castle to reflect the playful and engaging lessons offered, with a flag representing goal setting and achievement. The bold all-caps headings contrast nicely with a lighter, monospace font.</p>
+
+
+
+<figure class="wp-block-image size-large"><img width="1024" height="589" src="./../../../wp-content/uploads/2021/05/image-7-1024x589.png" alt="" class="wp-image-714" srcset="./../../../wp-content/uploads/2021/05/image-7-1024x589.png 1024w, ./../../../wp-content/uploads/2021/05/image-7-300x173.png 300w, ./../../../wp-content/uploads/2021/05/image-7-768x442.png 768w, ./../../../wp-content/uploads/2021/05/image-7-1800x1036.png 1800w, ./../../../wp-content/uploads/2021/05/image-7-1536x884.png 1536w, ./../../../wp-content/uploads/2021/05/image-7.png 1974w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../log-book/logos/edaas/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>wearable development</title>
+		<link>./../../../log-book/resonant/resonant-wearable-development/index.html</link>
+					<comments>./../../../log-book/resonant/resonant-wearable-development/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[rohanmenon]]></dc:creator>
+		<pubDate>Fri, 26 Mar 2021 00:41:57 +0000</pubDate>
+				<category><![CDATA[resonant]]></category>
+		<guid isPermaLink="false">http://wp.menon.pro/?p=187</guid>
+
+					<description><![CDATA[With progress being made on the algorithms side of Resonant, I started looking at how we were going to present our information to a user that is potentially deaf or hard of hearing. The first step was deciding on a form factor. The requirements were pretty simple. Display the source and classification of soundDoes not [...]]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-full"><img width="879" height="474" src="./../../../wp-content/uploads/2021/05/img_608f7e05760c3.png" alt="" class="wp-image-464" srcset="./../../../wp-content/uploads/2021/05/img_608f7e05760c3.png 879w, ./../../../wp-content/uploads/2021/05/img_608f7e05760c3-300x162.png 300w, ./../../../wp-content/uploads/2021/05/img_608f7e05760c3-768x414.png 768w" sizes="(max-width: 879px) 100vw, 879px" /></figure>
+
+
+
+<p>With progress being made on the algorithms side of Resonant, I started looking at how we were going to present our information to a user that is potentially deaf or hard of hearing. The first step was deciding on a form factor. The requirements were pretty simple.</p>
+
+
+
+<ol><li>Display the source and classification of sound</li><li>Does not impede normal vision significantly</li><li>Fairly discrete and comfortable</li></ol>
+
+
+
+<p>We settled on a baseball cap, with a small OLED display mounted in the brim of the hat. This option was easy to implement, but it had its drawbacks. For one, the information is displayed on an opaque screen, so a portion of the user&#8217;s vision is lost. Secondly, without a lens, it can be straining to focus on the screen, which is mounted relatively close to the user&#8217;s eyes.</p>
+
+
+
+<figure class="wp-block-image size-large small"><img width="1024" height="408" src="./../../../wp-content/uploads/2021/05/image-2-1024x408.png" alt="" class="wp-image-473" srcset="./../../../wp-content/uploads/2021/05/image-2-1024x408.png 1024w, ./../../../wp-content/uploads/2021/05/image-2-300x120.png 300w, ./../../../wp-content/uploads/2021/05/image-2-768x306.png 768w, ./../../../wp-content/uploads/2021/05/image-2-1536x612.png 1536w, ./../../../wp-content/uploads/2021/05/image-2-2048x816.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>With the display selected, I could plan out the rest of the hardware. It&#8217;s just 5 main components</p>
+
+
+
+<ol><li>Respeaker 4 Microphone array</li><li>OLED display</li><li>Raspberry Pi 3A</li><li>MPU6050 IMU</li><li>Battery and control circuity</li></ol>
+
+
+
+<p>Components were sewn into the hat and headers were replaced with flexible silicone wire to make the finished device as comfortable as possible. Surprisingly, the finished device was comfortable and takes special attention to notice that it&#8217;s modified (apart from the brim-mounted display).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../log-book/resonant/resonant-wearable-development/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>new sensor deployed</title>
+		<link>./../../../log-book/aquametric/new-sensor-deployed/index.html</link>
+					<comments>./../../../log-book/aquametric/new-sensor-deployed/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[rohanmenon]]></dc:creator>
+		<pubDate>Sat, 03 Oct 2020 22:08:25 +0000</pubDate>
+				<category><![CDATA[aquametric]]></category>
+		<guid isPermaLink="false">http://wp.menon.pro/?p=251</guid>
+
+					<description><![CDATA[We have been working on designing and releasing our next sensor version. This one focuses on using more readily available parts and being more versatile depending on the situation in which it is deployed. To read more about this sensor&#8217;s design and some rough steps to create your own, visit our new guide at&#160;guide.aquametric.live. Keep [...]]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img width="768" height="1024" src="./../../../wp-content/uploads/2021/03/IMG_20200927_120035-768x1024.jpg" alt="" class="wp-image-252" srcset="./../../../wp-content/uploads/2021/03/IMG_20200927_120035-768x1024.jpg 768w, ./../../../wp-content/uploads/2021/03/IMG_20200927_120035-225x300.jpg 225w, ./../../../wp-content/uploads/2021/03/IMG_20200927_120035-1152x1536.jpg 1152w, ./../../../wp-content/uploads/2021/03/IMG_20200927_120035-1536x2048.jpg 1536w, ./../../../wp-content/uploads/2021/03/IMG_20200927_120035-scaled.jpg 1920w" sizes="(max-width: 768px) 100vw, 768px" /></figure>
+
+
+
+<p>We have been working on designing and releasing our next sensor version. This one focuses on using more readily available parts and being more versatile depending on the situation in which it is deployed.</p>
+
+
+
+<p>To read more about this sensor&#8217;s design and some rough steps to create your own, visit our new guide at&nbsp;<a href="https://guide.aquametric.live/" target="_blank" rel="noreferrer noopener">guide.aquametric.live</a>. Keep in mind this is still very much a work in progress, so some of the pages may not be complete.</p>
+
+
+
+<p>We were planning to install our sensor via a single aluminum rod hammered into the stream bed. When we reached the stream, we realized that this plan was not going to work. The stream bed was extremely rocky. No amount of hammering was going to mount the rod securely enough.</p>
+
+
+
+<p>We settled on mounting the sensor to a tree overhanging the stream. Zip ties were used to secure the main device and auxiliary sensor cables to the log. While it may look crude, the sensor is very securely mounted, probably better than many of our other solutions.</p>
+
+
+
+<p>In fact the tree mounting has a slight advantage over our other options. Since, there is no mounting parts that enter the water, there is very little for debris to collect around, so we expect to get more stable stage readings from it.</p>
+
+
+
+<p>It has only been installed for a week now, but we have already seen some promising data. This shows the stream recovering to normal levels over a few days after a heavy rain.</p>
+
+
+
+<figure class="wp-block-image"><a class="single_photoswipe" data-size="1368x274" href="./../../../wp-content/uploads/2021/03/img_605d553cacbdd.png" target="_blank" rel="noreferrer noopener"><img src="./../../../wp-content/uploads/2021/03/img_605d553cacbdd.png" alt=""/></a><figcaption>Stream stage after heavy rain</figcaption></figure>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../log-book/aquametric/new-sensor-deployed/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>interactive timeline</title>
+		<link>./../../../log-book/athletes-for-equal-rights/interactive-timeline/index.html</link>
+					<comments>./../../../log-book/athletes-for-equal-rights/interactive-timeline/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[rohanmenon]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2020 00:00:12 +0000</pubDate>
+				<category><![CDATA[athletes for equal rights]]></category>
+		<guid isPermaLink="false">http://wp.menon.pro/?p=566</guid>
+
+					<description><![CDATA[We wanted the site to have a homepage that was more than just a landing. With the help of Jacob Yanoff, we storyboarded and designed an interactive timeline presenting a short history of athletes and activism.I developed this part of the site on a separate development server and eventually moved it to the main site. [...]]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image"><img src="./../../../wp-content/uploads/2021/05/timeline.jpg" alt="AFER Timeline"/></figure>
+
+
+
+<p>We wanted the site to have a homepage that was more than just a landing. With the help of Jacob Yanoff, we storyboarded and designed an interactive timeline presenting a short history of athletes and activism.<br><br>I developed this part of the site on a separate development server and eventually moved it to the main site. I learned a lot about scaling for various devices and JS animation in the process.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../log-book/athletes-for-equal-rights/interactive-timeline/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>methods of measuring velocity</title>
+		<link>./../../../log-book/aquametric/methods-of-measuring-velocity/index.html</link>
+					<comments>./../../../log-book/aquametric/methods-of-measuring-velocity/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[rohanmenon]]></dc:creator>
+		<pubDate>Fri, 11 Sep 2020 13:16:37 +0000</pubDate>
+				<category><![CDATA[aquametric]]></category>
+		<guid isPermaLink="false">http://wp.menon.pro/?p=245</guid>
+
+					<description><![CDATA[While stage height can provide useful data to help predict flood events or other localized events, it is sometimes not enough to be able to quantitatively measure how one water body will interact with another. The flow rate can provide this data, but in order to measure it, you need to know a) the cross [...]]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image"><img src="./../../../wp-content/uploads/2021/03/img_605d5264c77e4.png" alt="Stream velocity distribution"/></figure>
+
+
+
+<p>While stage height can provide useful data to help predict flood events or other localized events, it is sometimes not enough to be able to quantitatively measure how one water body will interact with another.</p>
+
+
+
+<p>The flow rate can provide this data, but in order to measure it, you need to know a) the cross section of the stream, b) the height of the water flowing through that cross section, and c) the velocity of the water. Our device directly measures the height of the water and we did a <a rel="noreferrer noopener" href="https://hackaday.io/project/170881-aquametric-cellular-based-stream-monitors/log/177969-stream-cross-sectional-analysis" target="_blank">project log on getting the cross section of a stream</a>. We thinking about two different approaches.</p>
+
+
+
+<p></p>
+
+
+
+<h3>1. Infer It</h3>
+
+
+
+<p>This is where the installer of the device would measure the average velocity manually when the stream is at a variety of different water levels to correlate the two. In theory, there&#8217;s only one water velocity for a given water level. The installer could come to the stream a number of times (e.g. when the stage is 5 cm, 20 cm, 50 cm and 1 meter) and measure the velocity with a propeller based current meter. At that point, a unique expression that correlates velocity and stage could be created for the stream.</p>
+
+
+
+<p></p>
+
+
+
+<h3>2. Measure it on device</h3>
+
+
+
+<p>Measuring the velocity in real time reduces the number of times an installer has to visit the device location, and it may provide new insight that we wouldn&#8217;t gather from the first option. The most obvious way to do it is with a propeller based current meter. However, if we&#8217;ve learned anything from this project, it&#8217;s that debris will find its way into anything open to it. Shrouding it in some sort of case is an option, but in general we would like to keep the device free of moving parts.</p>
+
+
+
+<p>We&#8217;re also thinking about finding the velocity indirectly. By measuring the drag force that an object feels in the water, we should be able to calculate the velocity. We imagine a small load cell mounted near the base of the sensor with a plate mounted to its other end.&nbsp;<a href="https://aip.scitation.org/doi/10.1063/1.1147009">This study</a>&nbsp;appears to be doing a very similar thing in a lake.</p>
+
+
+
+<p>There is actually a phenomenon that isn&#8217;t fully addressed by any of these methods. The velocity of water in a stream varies from near 0 at the stream bed to its maximum on the surface. The cross section looks something like this.</p>
+
+
+
+<p><a href="./../../../wp-content/uploads/2021/03/img_605d5264c77e4.png" target="_blank" rel="noreferrer noopener"></a>Measuring velocity like this in real time is probably out of the question for our sensor&#8217;s budget. Maybe if this kind of measurement was taken once, we could use the height to infer the velocity. However, even one manual analysis like this is costly and labor intensive.</p>
+
+
+
+<p>Neither of us are environmental science experts (or engineering experts for that matter), so we would love any feedback that you might have.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../log-book/aquametric/methods-of-measuring-velocity/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>more robust hardware alternative</title>
+		<link>./../../../log-book/aquametric/more-robust-hardware-alternative/index.html</link>
+					<comments>./../../../log-book/aquametric/more-robust-hardware-alternative/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[rohanmenon]]></dc:creator>
+		<pubDate>Wed, 02 Sep 2020 15:14:36 +0000</pubDate>
+				<category><![CDATA[aquametric]]></category>
+		<guid isPermaLink="false">http://wp.menon.pro/?p=242</guid>
+
+					<description><![CDATA[I&#8217;ve been working on an alternative sensor version for areas where natural conditions or people are likely to damage the device. The idea of a fully enclosed PVC sensor design came from my mentor session with Bruce Dominguez. While this design will be harder to install, it will be much more resilient to damage. Currently [...]]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img width="784" height="1024" src="./../../../wp-content/uploads/2021/05/image-8-784x1024.png" alt="" class="wp-image-742" srcset="./../../../wp-content/uploads/2021/05/image-8-784x1024.png 784w, ./../../../wp-content/uploads/2021/05/image-8-230x300.png 230w, ./../../../wp-content/uploads/2021/05/image-8-115x150.png 115w, ./../../../wp-content/uploads/2021/05/image-8-768x1003.png 768w, ./../../../wp-content/uploads/2021/05/image-8.png 900w" sizes="(max-width: 784px) 100vw, 784px" /></figure>
+
+
+
+<p>I&#8217;ve been working on an alternative sensor version for areas where natural conditions or people are likely to damage the device. The idea of a fully enclosed PVC sensor design came from my mentor session with Bruce Dominguez. While this design will be harder to install, it will be much more resilient to damage.</p>
+
+
+
+<p>Currently I am working on modeling up the new design in fusion and creating a new BOM. I want to make sure all the parts are still easy to find and relatively low cost. My main concerns with the design are the buildup of debris that may occur at the holes in the PVC and the potential for ultrasonic signals to bounce around inside the chamber before making their way back to the sensor, skewing readings. The only real way to test these things is by actually building a prototype of the device.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../log-book/aquametric/more-robust-hardware-alternative/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>wordpress blog</title>
+		<link>./../../../log-book/athletes-for-equal-rights/wordpress-blog/index.html</link>
+					<comments>./../../../log-book/athletes-for-equal-rights/wordpress-blog/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[rohanmenon]]></dc:creator>
+		<pubDate>Sun, 09 Aug 2020 00:50:08 +0000</pubDate>
+				<category><![CDATA[athletes for equal rights]]></category>
+		<guid isPermaLink="false">http://wp.menon.pro/?p=560</guid>
+
+					<description><![CDATA[I had created a number of websites, but all of those were for myself so I never bothered with content management or a complicated backend. The PHP backend of WordPress was definitely a learning experience for me. After creating a custom theme for the site, I created the skeleton pages that Emma and Olivia would [...]]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image"><img src="./../../../wp-content/uploads/2021/05/site.jpg" alt="AFER Blog"/></figure>
+
+
+
+<p>I had created a number of websites, but all of those were for myself so I never bothered with content management or a complicated backend. The PHP backend of WordPress was definitely a learning experience for me. After creating a custom theme for the site, I created the skeleton pages that Emma and Olivia would eventually fill with content.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../log-book/athletes-for-equal-rights/wordpress-blog/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
